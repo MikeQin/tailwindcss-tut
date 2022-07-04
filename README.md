@@ -1,3 +1,49 @@
+# Tailwind CSS Tutorial
+
+### Install Tailwind CSS
+```
+npx create-next-app tailwindcss-tut
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# tailwind.config.js
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+# globals.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npm run dev
+```
+
+#### Tailwind CSS Grid Areas
+```
+npm install --save-dev @savvywombat/tailwindcss-grid-areas
+```
+
+### React Icons
+```
+# React Icons
+npm install react-icons --save
+```
+[react-icons](https://react-icons.github.io/react-icons)
+
+### Heroicons
+[heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons with inline SVG
+
+------
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
